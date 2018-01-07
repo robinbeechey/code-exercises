@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec344f5c-aa42-4ba8-b79d-dd09e3e67c6a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/anagrams/index.js" afterPath="$PROJECT_DIR$/exercises/anagrams/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/capitalize/index.js" afterPath="$PROJECT_DIR$/exercises/capitalize/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/chunk/index.js" afterPath="$PROJECT_DIR$/exercises/chunk/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/fib/index.js" afterPath="$PROJECT_DIR$/exercises/fib/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/fizzbuzz/index.js" afterPath="$PROJECT_DIR$/exercises/fizzbuzz/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/matrix/index.js" afterPath="$PROJECT_DIR$/exercises/matrix/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/maxchar/index.js" afterPath="$PROJECT_DIR$/exercises/maxchar/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/palindrome/index.js" afterPath="$PROJECT_DIR$/exercises/palindrome/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/pyramid/index.js" afterPath="$PROJECT_DIR$/exercises/pyramid/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/reverseint/index.js" afterPath="$PROJECT_DIR$/exercises/reverseint/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/reversestring/index.js" afterPath="$PROJECT_DIR$/exercises/reversestring/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/steps/index.js" afterPath="$PROJECT_DIR$/exercises/steps/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercises/vowels/index.js" afterPath="$PROJECT_DIR$/exercises/vowels/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AlgoCasts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,14 +25,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exercises/fib/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43543223">
+            <state vertical-scroll-proportion="0.0">
               <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.03628602">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,6 +78,7 @@
         <option value="$PROJECT_DIR$/exercises/vowels/index.js" />
         <option value="$PROJECT_DIR$/exercises/matrix/index.js" />
         <option value="$PROJECT_DIR$/exercises/fib/index.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -135,56 +135,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AlgoCasts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlgoCasts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlgoCasts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercises" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlgoCasts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlgoCasts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercises" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vowels" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlgoCasts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlgoCasts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercises" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -706,11 +656,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/exercises/fib/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43543223">
+        <state vertical-scroll-proportion="0.0">
           <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03628602">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
