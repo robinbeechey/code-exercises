@@ -24,6 +24,29 @@
 
 const Queue = require('./queue');
 
-function weave(sourceOne, sourceTwo) {}
+function weave(sourceOne, sourceTwo) {
+
+    const q = new Queue();
+    //for loop with length of combined arrays
+    //pass array and add()
+    const length = sourceOne.data.length + sourceTwo.data.length;
+    //sourceOne = [4,3,2,1]
+    //sourceTwo = [four,three,two,one]
+    //we want q = [four,4,three,3...]
+
+    while (sourceOne.peek() || sourceTwo.peek()){
+        if (sourceOne.peek()){
+            q.add(sourceOne.remove());
+        }
+        if (sourceTwo.peek()){
+            q.add(sourceTwo.remove());
+        }
+    }
+
+    console.log(q.data);
+
+    return q;
+
+}
 
 module.exports = weave;
