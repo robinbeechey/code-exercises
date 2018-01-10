@@ -68,27 +68,44 @@ class LinkedList {
             return;
         }
 
-        if (!this.head.next){
+        if (!this.head.next) {
             this.head = null;
             return;
         }
 
+        let nodeBefore = this.head;
+        let node = this.head.next;
 
-
-        let node = this.head;
-
-        let nodeBefore = node;
-
-        while (node) {
-
-            if (node.next) {
-                nodeBefore = node;
-            }
-
+        while (node.next) {
+            nodeBefore = node;
             node = node.next;
         }
 
         nodeBefore.next = null;
+    }
+
+    insertLast(data) {
+
+        const newNode = new Node(data);
+
+        //if no head insert head
+        if (!this.head) {
+            this.head = newNode;
+            return;
+        }
+
+
+        let node = this.head;
+
+        //if there is head then check if it has next, if not assign to newNode
+
+        while (node) {
+            if (!node.next) {
+                node.next = newNode;
+                return;
+            }
+            node = node.next;
+        }
     }
 
 }
