@@ -96,6 +96,27 @@ class LinkedList {
             this.head = node;
         }
 
+    }
+
+    getAt(integer){
+        let node = this.head;
+        let counter = 0;
+
+        while (node){
+            if (counter === integer){
+                return node;
+            }
+            node = node.next;
+            counter++;
+        }
+        return null;
+    }
+
+    removeAt(){
+
+    }
+
+    insertAt(){
 
     }
 
