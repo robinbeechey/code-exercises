@@ -86,26 +86,17 @@ class LinkedList {
 
     insertLast(data) {
 
-        const newNode = new Node(data);
+        const last = this.getLast();
 
-        //if no head insert head
-        if (!this.head) {
-            this.head = newNode;
-            return;
+        const node = new Node(data);
+
+        if (last){
+            last.next = node;
+        } else {
+            this.head = node;
         }
 
 
-        let node = this.head;
-
-        //if there is head then check if it has next, if not assign to newNode
-
-        while (node) {
-            if (!node.next) {
-                node.next = newNode;
-                return;
-            }
-            node = node.next;
-        }
     }
 
 }
