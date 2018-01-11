@@ -112,9 +112,25 @@ class LinkedList {
         return null;
     }
 
-    removeAt(){
+    removeAt(integer) {
+
+        if (!this.head || !this.getAt(integer)) {
+            return null;
+        }
+
+        let previousNode = this.getAt(integer - 1);
+        let nextNode = this.getAt(integer);
+
+        if (integer === 0) {
+            this.head = this.head.next;
+        } else {
+            previousNode.next = nextNode.next;
+        }
+
 
     }
+
+
 
     insertAt(){
 
