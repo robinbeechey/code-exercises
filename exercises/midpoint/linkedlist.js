@@ -173,6 +173,7 @@ class LinkedList {
       node = node.next;
     }
   }
+
 }
 
 module.exports = { Node, LinkedList };

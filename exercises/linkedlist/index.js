@@ -10,6 +10,7 @@ class Node {
 }
 
 class LinkedList {
+
     constructor() {
         this.head = null;
     }
@@ -90,7 +91,7 @@ class LinkedList {
 
         const node = new Node(data);
 
-        if (last){
+        if (last) {
             last.next = node;
         } else {
             this.head = node;
@@ -98,12 +99,12 @@ class LinkedList {
 
     }
 
-    getAt(integer){
+    getAt(index) {
         let node = this.head;
         let counter = 0;
 
-        while (node){
-            if (counter === integer){
+        while (node) {
+            if (counter === index) {
                 return node;
             }
             node = node.next;
@@ -112,16 +113,16 @@ class LinkedList {
         return null;
     }
 
-    removeAt(integer) {
+    removeAt(index) {
 
-        if (!this.head || !this.getAt(integer)) {
+        if (!this.head || !this.getAt(index)) {
             return null;
         }
 
-        let previousNode = this.getAt(integer - 1);
-        let nextNode = this.getAt(integer);
+        let previousNode = this.getAt(index - 1);
+        let nextNode = this.getAt(index);
 
-        if (integer === 0) {
+        if (index === 0) {
             this.head = this.head.next;
             return;
         } else {
@@ -131,37 +132,54 @@ class LinkedList {
 
     }
 
-    insertAt(data, integer){
-        const newNode = new Node(data);
+    insertAt(data, index) {
+        //this method uses the second parameter which assign to next which is good unlike mine.
 
         //if empty
-        if (!this.head){
-            this.head = newNode;
+        if (!this.head) {
+            this.head = new Node(data);
             return;
-        }   
+        }
 
         //if 0
-        if (integer === 0){
-            newNode.next = this.getFirst();
-            this.head = newNode;
+        if (index === 0) {
+            this.head = new Node(data, this.head);
             return;
         }
 
         //if out of bounds
-        if (!this.getAt(integer)){
+        if (!this.getAt(index)) {
             this.insertLast(data);
             return;
         }
 
         //if middle
 
-        let previousNode = this.getAt(integer - 1);
-        let currentNode = this.getAt(integer);
+        let previousNode = this.getAt(index - 1);
+        let currentNode = this.getAt(index);
 
-        newNode.next = currentNode;
-        previousNode.next = newNode;
+        const node = new Node(data, currentNode);
+        previousNode.next = node;
 
     }
+
+    forEach(fn) {
+        let node = this.head;
+        while (node) {
+            fn(node);
+            node = node.next;
+        }
+    }
+
+    *[Symbol.iterator]() {
+        let node = this.head;
+
+        while (node) {
+            yield node;
+            node = node.next;
+        }
+    }
+
 
 }
 
