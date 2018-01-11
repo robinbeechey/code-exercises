@@ -131,9 +131,35 @@ class LinkedList {
 
     }
 
+    insertAt(data, integer){
+        const newNode = new Node(data);
 
+        //if empty
+        if (!this.head){
+            this.head = newNode;
+            return;
+        }   
 
-    insertAt(){
+        //if 0
+        if (integer === 0){
+            newNode.next = this.getFirst();
+            this.head = newNode;
+            return;
+        }
+
+        //if out of bounds
+        if (!this.getAt(integer)){
+            this.insertLast(data);
+            return;
+        }
+
+        //if middle
+
+        let previousNode = this.getAt(integer - 1);
+        let currentNode = this.getAt(integer);
+
+        newNode.next = currentNode;
+        previousNode.next = newNode;
 
     }
 
