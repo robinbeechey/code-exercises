@@ -123,10 +123,11 @@ class LinkedList {
 
         if (integer === 0) {
             this.head = this.head.next;
+            return;
         } else {
             previousNode.next = nextNode.next;
+            return;
         }
-
 
     }
 
